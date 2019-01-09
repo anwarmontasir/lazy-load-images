@@ -1,0 +1,39 @@
+{
+    "name": "lazy load images",
+    "version": "1.0.0",
+    "description": "Lazy load images case study",
+    "main": "src/main.js",
+    "scripts": {
+        "lint": "eslint src",
+        "htmlhint": "htmlhint --config .htmlhintrc **/*.html",
+        "pretest": "npm run lint && npm run htmlhint",
+        "test": "echo \"Error: no tests yet!\" && exit 0",
+        "start": "webpack-dev-server",
+        "build": "webpack"
+    },
+    "author": "Anwar Montasir <anwarmontasir@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^9.4.3",
+        "clean-webpack-plugin": "^1.0.0",
+        "css-loader": "^2.1.0",
+        "eslint": "^5.11.1",
+        "file-loader": "^3.0.1",
+        "html-loader": "^0.5.5",
+        "html-webpack-inline-source-plugin": "0.0.10",
+        "html-webpack-plugin": "^3.2.0",
+        "html-webpack-template": "^6.2.0",
+        "htmlhint": "^0.10.1",
+        "mini-css-extract-plugin": "^0.5.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.1",
+        "postcss-loader": "^3.0.0",
+        "precss": "^4.0.0",
+        "prerender-loader": "^1.2.0",
+        "style-loader": "^0.23.1",
+        "uglifyjs-webpack-plugin": "^2.1.1",
+        "url-loader": "^1.1.2",
+        "webpack": "^4.28.3",
+        "webpack-cli": "^3.1.2",
+        "webpack-dev-server": "^3.1.14"
+    }
+}
