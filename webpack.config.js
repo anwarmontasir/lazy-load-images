@@ -29,36 +29,43 @@ module.exports = {
     // new cleanWebpackPlugin(`$__dirname}/build`),
     // create an index.html based on our template
     // will add in <script> to bundle.js
-    new htmlPlugin({ 
-      template: '!!prerender-loader?string!./src/index.html', 
+    new htmlPlugin({
+      template: './src/index.html',
     }),
-    new miniCssExtractPlugin({ filename: 'main.css' })
+    new miniCssExtractPlugin({
+      filename: 'main.css'
+    })
   ],
   module: {
     // 'loaders' tell webpack how to require (or import) things
-    rules: [
-      {
-        test: /.html$/,
-        use: {
-          loader: 'html-loader'
-        }
-      },
-      {
-        test: /\.css$/,
-        use:  [{ loader: 'style-loader' }, miniCssExtractPlugin.loader, { loader: 'css-loader' }, { loader: 'postcss-loader' }]
-      },
-      // load images
-      {
-        test: /\.(jpg|png|svg)$/,
-        use: {
-          loader: 'url-loader',
-          // default is to inline image content via base64 encoding
-          // if file is bigger than this limit, create a 'real' file
-          options: {
-            limit: 5000
-          }
+    rules: [{
+      test: /.html$/,
+      use: {
+        loader: 'html-loader'
+      }
+    },
+    {
+      test: /\.css$/,
+      use: [{
+        loader: 'style-loader'
+      }, miniCssExtractPlugin.loader, {
+        loader: 'css-loader'
+      }, {
+        loader: 'postcss-loader'
+      }]
+    },
+    // load images
+    {
+      test: /\.(jpg|png|svg)$/,
+      use: {
+        loader: 'url-loader',
+        // default is to inline image content via base64 encoding
+        // if file is bigger than this limit, create a 'real' file
+        options: {
+          limit: 5000
         }
       }
+    }
     ]
   }
 };
