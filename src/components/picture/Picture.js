@@ -21,7 +21,7 @@ export default class Picture {
 
       if(i < cloudinaryObj.aspectRatios.length - 1) {
         // if this is NOT the last image in the array, output the <source> element
-        pictureHTML += `<source media="(min-width: ${cloudinaryObj.breakpoints[(i + 1)]}px)" srcset=${imgURL}, ${retinaURL} 2x">`;
+        pictureHTML += `<source media="(min-width: ${cloudinaryObj.breakpoints[(i + 1)]}px)" srcset="${imgURL}, ${retinaURL} 2x">`;
       } else {
         // if this IS the last image, output the <img> element
         pictureHTML += `<img srcset="${imgURL}, ${retinaURL} 2x" alt="${cloudinaryObj.alt}">`;
