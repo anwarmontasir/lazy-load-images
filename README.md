@@ -22,7 +22,7 @@ For the hero image, I started with a large version of Van Gogh’s 1890 painting
 
 ![Vincent Van Gogh, Wheatfield With Crows, 1890](http://res.cloudinary.com/anwarmontasir/image/upload/c_fill,g_auto,q_auto,w_960/wheatfield-with-crows-vincent-van-gogh-1890_nb7qd7.jpg "Vincent Van Gogh, Wheatfield With Crows, 1890")
 
-A key feature of my script for loading the hero image are the preferences, based on Cloudinary’s [Image Transformations](https://cloudinary.com/documentation/image_transformations) documentation established in **Home.js**
+A key feature of my script for loading the hero image are the preferences, based on Cloudinary’s [Image Transformations](https://cloudinary.com/documentation/image_transformations) documentation, established in **Home.js**:
 
 ```
 aspectRatios: ['3:1', '5:2', '2:1', '3:2', '1:1'],
@@ -58,3 +58,12 @@ setTimeout(() => {
     observer.observe(wrapper);
 });
 ```
+
+## Technologies Used
+
+* HTML5
+* CSS
+* JavaScript
+* Webpack
+* Node.js
+* PostCSS
