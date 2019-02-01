@@ -1,5 +1,7 @@
 # Lazy Load Images
 
+Working demo at [http://www.anwarmontasir.com/lazy-load-images/](http://www.anwarmontasir.com/lazy-load-images/)
+
 ## Project Overview
 
 This project was built for the Devsign course I designed and taught in the winter of 2018 at [Alchemy Code Lab](https://www.alchemycodelab.com/).
